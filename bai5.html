@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra 2 chuỗi có giống nhau không?</title>
+</head>
+<body>
+<script>
+    let str1 = "Tôi là Chu Văn Kiên";
+    let str2 = "Tôi là Chu Văn Tuấn";
+    let arr1 = str1.split("");
+    let arr2 = str2.split("");
+    let result = true;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] != arr2[i]) {
+            result = false;
+        }
+    }
+    if (result) {
+        document.write("Hai chuỗi này giống nhau")
+    } else {
+        document.write("Hai chuỗi này khác nhau")
+    }
+</script>
+</body>
+</html>
